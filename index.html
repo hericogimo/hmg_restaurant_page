@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecommerce page</title>
+    <link rel="favicon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/backgrounds.css">
+    <link rel="stylesheet" href="css/shadowns.css">
+    <link rel="stylesheet" href="css/slider/slide.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/slider/sliderPa.css">
+    <link rel="stylesheet" href="css/borders.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.4.1.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#content-slider").lightSlider({
+                loop:false,
+                keyPress:true
+            });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:9,
+                slideMargin: 0,
+                pause:7000,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container" style="flex-wrap: nowrap;">
+
+            <button class="hideDesktopFlexn hmgBtn noback navMenuBt hideDesktop">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20"><path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path></svg>
+            </button>
+            
+            <a href="#" class="navbar-brand">
+                <h2>Ch Grill</h2>
+            </a>
+
+            <div class="navbar-collapse hideMobile" id="main-nav">
+                <ul class="navbar-nav mr-auto w-100 justify-content-center">
+                    <li class="nav-item menu shadown justify-content-between hideDesktop">
+                        <a class="nav-link ">Menu</a>
+                        <button type="button" class="hmgBtn hmgBtnRR navMenuBt hmg-back-w">&Cross;</button>
+                    </li>
+                    <li class="nav-item active">
+
+                        <a class="nav-link " href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">localização</a>
+                    </li>
+                    
+                    <div class="align-items-center justify-content-center hideDesktop">
+                        <a href="https://github.com/hericoGimo" class="border-1-d-w hmg-hover-w whatsBt shadown">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=+258842477108&text=Hi" class="border-1-d-w hmg-hover-w whatsBt shadown">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://web.facebook.com/ericomateusgimo" class="border-1-d-w hmg-hover-w whatsBt shadown">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+
+                </ul>
+            </div>
+
+            <div class="navBts hideDesktopFlex justify-content-between">
+
+                <a href="tel: +258 85 613 1320" class="border-1-d-w hmg-hover-w whatsBt shadown">
+                    <i class="fa fa-phone-alt"></i>
+                </a>
+
+                <a href="tel: +258 85 613 1320" class="hideMobile">
+                    <button class="hideDesktopFlexn hmgBtnR hover-o border-1-s-w noback">
+                        <i class="fa fa-phone-alt"></i> +258 85 613 1320
+                    </button>
+                </a>
+
+                <a href="https://api.whatsapp.com/send?phone=+258842477108&text=Hi" class="border-1-d-w hmg-hover-w whatsBt shadown">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+                <!--
+                    <a href="#">
+                        <button class="hideDesktopFlexn hmgBtnR hover-p hmg-back-o">
+                            Pedir
+                        </button>
+                    </a>
+
+                    <button class="hideDesktopFlexn hmgBtnQuiet noback hover-n">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill-rule="evenodd" d="M14.53 15.59a8.25 8.25 0 111.06-1.06l5.69 5.69a.75.75 0 11-1.06 1.06l-5.69-5.69zM2.5 9.25a6.75 6.75 0 1111.74 4.547.746.746 0 00-.443.442A6.75 6.75 0 012.5 9.25z"></path></svg>
+                    </button>
+
+
+                    <button class="hideDesktopFlexn hmgBtnQuiet noback hover-n">
+                        <div class="notify-container">
+                            <span class="hmg-notify-num shadown hmg-back-o">3</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3 hmg-fill-p" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                            </svg>
+                        </div>
+                    </button>
+                -->
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="slider d-flex" id="home">
+        <div class="sliderContainer d-flex justify-content-center">
+            <div class="sliderOpcity"></div>
+            <div class="d-flex col-10 justify-content-between align-items-center sliderContent">
+                <div class="col w-100 slidetText">
+                  <h2>Chicken Grill</h2>
+                  <h4>O seu portal de Fast Food</h4>
+                  <a href="#">
+                    <button class="hideDesktopFlexn hmgBtnR hover-p hmg-back-o">
+                        Fazer encomenda
+                    </button>
+                  </a>
+
+                  <h5 class="w-100">Bairro da Manduca, Av. Eduardo Mondlane</h5>
+
+                </div>
+                <div class="col w-100 sliderImage hideMobile justify-content-center">
+                    <div class="demo">
+                        <div class="item">
+                            <div class="clearfix">
+                                <ul id="image-gallery" class="gallery list-unstyled cS-hidden flex-row">
+                                    <li data-thumb="img/thumb/cS-1.jpg">
+                                        <img src="img/image2.jpg" width="100"/>
+                                    </li>
+                                    <li data-thumb="img/thumb/cS-1.jpg">
+                                        <img src="img/delivery1.jpg" width="100"/>
+                                    </li>
+                                    <li data-thumb="img/thumb/cS-1.jpg">
+                                        <img src="img/image3.jpg" width="100"/>
+                                    </li>
+                                    <li data-thumb="img/thumb/cS-1.jpg">
+                                        <img src="img/image4.jpg" width="100"/>
+                                    </li>
+                                    <li data-thumb="img/thumb/cS-1.jpg">
+                                        <img src="img/sliderBack.jpg" width="100"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <section class="delicias" id="services">
+        <h1>As melhores delícias</h1>
+        <div class="container ">
+
+            <div class="row">
+                <div class="wow col-sm-4 d-flex justify-content-center fadeIn" data-wow-delay="0.5s">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-image d-flex hmg-back-o">
+                            <div class="cardBackOp" style="background-image: url('img/sliderBack.jpg');"></div>
+                            <img src="img/sliderBack.jpg" class="card-img-top" alt="" width="100">
+                        </div>
+                        <div class="card-body">
+                            <div class="cardTags d-flex justify-content-end">
+                                <div class="tag shadown">
+                                    <span><i class="fa fa-truck"></i></span>
+                                </div>
+                                <div class="tag shadown">
+                                    <span><i class="fa fa-phone-alt"></i></span>
+                                </div>
+                            </div>
+                            <h2 class="cardTitle">Hamburger Completo</h2>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h2 class="cardPrice w-100">200Mt</h2>
+                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o">Fazer pedido</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="wow col-sm-4 d-flex justify-content-center fadeIn" data-wow-delay="0.5s">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-image d-flex hmg-back-o">
+                            <div class="cardBackOp" style="background-image: url('img/image4.jpg');"></div>
+                            <img src="img/image4.jpg" class="card-img-top" alt="" width="100">
+                        </div>
+                        <div class="card-body">
+                            <div class="cardTags d-flex justify-content-end">
+                                <div class="tag shadown">
+                                    <span><i class="fa fa-truck"></i></span>
+                                </div>
+                                <div class="tag shadown">
+                                    <span><i class="fa fa-phone-alt"></i></span>
+                                </div>
+                            </div>
+                            <h2 class="cardTitle">Super Promo</h2>
+                            <p class="card-text">Frango interio, Dose de Batata e Refresco</p>
+                            <h2 class="cardPrice w-100">500Mt</h2>
+                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o">Fazer pedido</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="wow col-sm-4 d-flex justify-content-center fadeIn" data-wow-delay="0.5s">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-image d-flex hmg-back-o">
+                            <div class="cardBackOp" style="background-image: url('img/pizaa2.jpg');"></div>
+                            <img src="img/pizaa2.jpg" class="card-img-top" alt="" width="100">
+                        </div>
+                        <div class="card-body">
+                            <div class="cardTags d-flex justify-content-end">
+                                <div class="tag shadown">
+                                    <span><i class="fa fa-truck"></i></span>
+                                </div>
+                                <div class="tag shadown">
+                                    <span><i class="fa fa-phone-alt"></i></span>
+                                </div>
+                            </div>
+                            <h2 class="cardTitle">Pizsa Promo</h2>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor temporibus explicabo repellat</p>
+                            <h2 class="cardPrice w-100">500Mt</h2>
+                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o">Fazer pedido</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="delicias" id="about">
+        <h1>Quem somos</h1>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-6 col-sm-12">
+                    <div class="aboutImage w-100">
+                        <img src="img/image2.jpg" class="wow slideInLeft" data-wow-duration="1.5s" >
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <h6>Chicken Grill</h6>
+                    <p>
+                    Lagre dolor sit amet, consectetur adipisicing elit. Itaque quas officiis iure aspernatur sit adipisci quaerat unde at nequeRedug Lagre dolor sit amet, consectetur adipisicing elit. Itaque quas officiis iure
+                    </p>
+                    <h6>Especializados em: </h6>
+                    <ul >
+                        <li>Fast Food</li>
+                        <li>Hamburgers</li>
+                        <li>Pizzas</li>
+                        <li>Delivery</li>
+                        <li>Lunch Time</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="delivery text-center">
+        <div class="container-fluid overbg">
+            <div class="row">
+                 <div class="subscribe col-sm-12">
+                      <h1>Fazemos Delivery para a sua área</h1>
+                     <p>Delivery Lorem ipsum dolor sit amet, consectetur adipiscing elit.luctus est eget congue.</p>
+                     <a href="tel: +258 85 613 1320" class="hideMobile">
+                        <button class="hideDesktopFlexn hmgBtnR hover-o border-1-s-w noback">
+                            <i class="fa fa-phone-alt"></i> +258 85 613 1320
+                        </button>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=+258842477108&text=Hi" class="border-1-d-w whatsBt hmg-hover-w">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="delicias" id="contact">
+        <h1>Localização</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024243.9267794383!2d29.84117368380947!3d29.396658659771152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1574787295873!5m2!1sen!2seg" width="100%" height="350px"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <h6>Nossa Localização</h6>
+                    <p>
+                    Lagre dolor sit amet, consectetur adipisicing elit. Itaque quas officiis iure aspernatur sit adipisci quaerat unde at nequeRedug Lagre dolor sit amet, consectetur adipisicing elit. Itaque quas officiis iure
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="delicias" id="menu">
+        <h1>Nossos Produtos</h1>
+        <div class="container">
+            <div class="row">
+                <div class="wow col-sm-4 d-flex justify-content-center fadeIn" data-wow-delay="0.5s">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-image d-flex hmg-back-o">
+                            <div class="cardBackOp" style="background-image: url('img/pizaa2.jpg');"></div>
+                            <img src="img/pizaa2.jpg" class="card-img-top" alt="" width="100">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="cardTitle">Pizza 1</h2>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h2 class="cardPrice w-100">300Mt</h2>
+                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="wow col-sm-4 d-flex justify-content-center fadeIn" data-wow-delay="1s">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-image d-flex hmg-back-o">
+                            <div class="cardBackOp" style="background-image: url('img/chicken.jpg');"></div>
+                            <img src="img/chicken.jpg" class="card-img-top" alt="" width="100">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="cardTitle">Frango</h2>
+                            <p class="card-text">Frango interio, Dose de Batata e Refresco</p>
+                            <h2 class="cardPrice w-100">500Mt</h2>
+                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="wow col-sm-4 d-flex justify-content-center fadeIn" data-wow-delay="1.5s">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-image d-flex hmg-back-o">
+                            <div class="cardBackOp" style="background-image: url('img/pizaa.jpg');"></div>
+                            <img src="img/pizaa.jpg" class="card-img-top" alt="" width="100">
+                        </div>
+                        <div class="card-body">
+
+                            <h2 class="cardTitle">Pizsa Promo</h2>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor temporibus explicabo repellat</p>
+                            <h2 class="cardPrice w-100">500Mt</h2>
+                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="wow col-sm-4 d-flex justify-content-center fadeIn" data-wow-delay="2s">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-image d-flex hmg-back-o">
+                            <div class="cardBackOp" style="background-image: url('img/hamburger.jpg');"></div>
+                            <img src="img/hamburger.jpg" class="card-img-top" alt="" width="100">
+                        </div>
+                        <div class="card-body">
+
+                            <h2 class="cardTitle">Hamburger</h2>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor temporibus explicabo repellat</p>
+                            <h2 class="cardPrice w-100">150Mt</h2>
+                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="wow col-sm-4 d-flex justify-content-center fadeIn" data-wow-delay="2s">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-image d-flex hmg-back-o">
+                            <div class="cardBackOp" style="background-image: url('img/image2.jpg');"></div>
+                            <img src="img/image2.jpg" class="card-img-top" alt="" width="100">
+                        </div>
+                        <div class="card-body">
+
+                            <h2 class="cardTitle">Hamburger</h2>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor temporibus explicabo repellat</p>
+                            <h2 class="cardPrice w-100">150Mt</h2>
+                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="wow col-sm-4 d-flex justify-content-center fadeIn" data-wow-delay="2s">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-image d-flex hmg-back-o">
+                            <div class="cardBackOp" style="background-image: url('img/image3.jpg');"></div>
+                            <img src="img/image3.jpg" class="card-img-top" alt="" width="100">
+                        </div>
+                        <div class="card-body">
+
+                            <h2 class="cardTitle">Hamburger</h2>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor temporibus explicabo repellat</p>
+                            <h2 class="cardPrice w-100">150Mt</h2>
+                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="hmgBtnR hmg-back-p hover-o">Ver mais do menu</button>
+            </div>
+        </div>
+   </section>
+
+   <footer class="hmg-back-b w-100 d-flex flex-column align-items-center text-center">
+        <div class="imageOpacity">
+            <div class="logoItem d-flex justify-content-center align-items-center">
+                <a href="#" class="navbar-brand">
+                    <h2>Ch Grill</h2>
+                </a>
+            </div>
+            <div class="footerMenu">
+                <ul class="mr-auto w-100 d-flex justify-content-center">
+                    <li class="nav-item active">
+                        <a class="nav-link " href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">localização</a>
+                    </li>
+                </ul>
+            </div>
+            <h6><em>Todos os direitos reservados</h6>
+            <h6>2021 &copy; Hérico Mateus Gimo</em></h6>
+            <div class="d-flex justify-content-center align-items-center footerIcons">
+                <a href="https://github.com/hericoGimo" class="border-1-d-w hmg-hover-w">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=+258842477108&text=Hi" class="border-1-d-w hmg-hover-w">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://web.facebook.com/ericomateusgimo" class="border-1-d-w hmg-hover-w">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+   </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slider/slider.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+
+</body>
+</html>

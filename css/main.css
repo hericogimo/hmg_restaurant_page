@@ -1,0 +1,244 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+.hideMobile{
+    display: none;
+}
+
+.hideDesktop{
+    display: block;
+}
+
+.hideDesktopFlex{
+    display: flex;
+}
+
+.hide{
+    display: none;
+}
+
+.notify-container{
+    position: relative;
+}
+
+.hmg-notify-num{
+    width: auto;
+    height: auto;
+    padding: 2px 4px;
+    font: normal 0.7em varela;
+    border-radius: 1rem;
+    position: absolute;
+    z-index: 2;
+    top: -5px;
+    right: -4px;
+}
+
+i.fa-phone-alt, i.fa-phone, i.fa-whatsapp{
+    color: rgb(12, 179, 12);
+}
+
+i.fa-facebook{
+    color: lightskyblue;
+}
+
+i.fa-truck{
+    color: crimson;
+}
+
+.delicias{
+    margin: 0 0 50px 0;
+}
+
+.delicias h1{
+    font: normal 2em lobster;
+    text-align: center;
+    padding: 40px 0;
+    color: chocolate;
+}
+
+.wow{
+    margin: 30px 0;
+}
+
+.cardBackOp{
+    filter: blur(2px);
+    position: absolute;
+    width: 98%;
+    height: 98%;
+}
+
+.card img{
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.card-image{
+    width: 100%;
+    justify-content: center;
+    align-items: center;    
+    height: 200px;
+    z-index: 2;
+    position: relative;
+    padding: 2px;
+}
+
+.cardTitle{
+    font: normal 1.5em lobster;
+    color: crimson;
+}
+
+.cardPrice{
+    text-align: end;
+    font: normal 1.8em varela;
+}
+
+.card-body{
+    position: relative;
+}
+
+.card-body p{
+    font: normal 1.1em varela;
+    text-align: justify;
+    min-height: 40%;
+}
+
+.cardTags{
+    width: 100%;
+    height: 30px;
+    padding: 0 2px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.tag{
+    margin: 0 2px;
+    padding: 0 5px;
+    border-radius: 0 0 10px 10px;
+}
+
+.aboutImage{
+    height: 200px;
+    padding-bottom: 10px;
+}
+
+.aboutImage img{
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    margin:  0;
+}
+
+.delivery{
+    width: 100%;
+    margin-top: 100px;
+    background-image: url(../img/delivery1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 300px;
+}
+
+.overbg{
+    background-color: rgba(0, 0, 0, 0.411);
+}
+
+.overbg .whatsBt{
+    margin-top: 10px;
+}
+
+.delivery *{
+    color: white;
+}
+
+.delivery div{
+    height: 100%;
+}
+
+.subscribe {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    height: 300px;
+    background-image: url(../img/chicken.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+footer *{
+    color: white;
+    z-index: 2;
+}
+
+footer h6{
+    font-size: 0.9em;
+}
+
+.imageOpacity{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(82, 25, 4, 0.753);
+    z-index: 1;
+}
+
+footer ul{
+    flex-wrap: wrap;
+}
+
+.footerMenu li{
+    list-style: none;
+}
+
+.logoItem{
+    padding-top: 20px;
+}
+
+.footerIcons{
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.footerIcons a, .whatsBt{
+    color: white;
+    width: 40px; 
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 2rem;
+}
+
+@media screen and (min-width: 992px){
+    .hideMobileFlex{
+        display: flex;
+    }
+    
+    .hideMobile{
+        display: block;
+    }
+
+    .hideDesktop{
+        display: none;
+    }
+
+    .aboutImage{
+        height: 300px;
+    }
+
+    footer{
+        height: 200px;
+    }
+    
+}

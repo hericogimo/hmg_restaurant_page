@@ -1,0 +1,48 @@
+
+.noback{
+    background: none;
+}
+
+.hmg-back-p{
+    background-color: #59359A;
+    color: white;
+}
+
+.hmg-back-o{
+    background-color: #FD7E14;
+    color: white;
+}
+
+.hmg-back-b{
+    background-color: black;
+    color: white;
+}
+
+.hmg-back-w{
+    background-color: white;
+}
+
+.hmg-fill-p{
+    fill: #59359A;
+}
+
+.hmg-fill-o{
+    fill: #FD7E14;
+}
+
+.hmg-fill-w{
+    fill: #fff;
+}
+
+.hmg-hover-p:hover{
+    background-color: #59359A;
+}
+
+.hmg-hover-o:hover{
+    background-color: #FD7E14;
+}
+
+.hmg-hover-w:hover{
+    background-color: white;
+    color: black;
+}

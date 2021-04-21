@@ -1,0 +1,17 @@
+@font-face{
+    font-family: "varela";
+    font-size: 1em;
+    src: url("../plugins/fonts/Varela_Round/VarelaRound-Regular.ttf");
+}
+
+@font-face{
+    font-family: "lobster";
+    font-size: 1em;
+    src: url("../plugins/fonts/Lobster/Lobster-Regular.ttf");
+}
+
+@font-face{
+    font-family: "shadows";
+    font-size: 1em;
+    src: url("../plugins/fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf");
+}

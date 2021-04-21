@@ -1,0 +1,114 @@
+
+nav ul li a{
+    color: black;
+    font: normal 1em varela;
+}
+
+nav ul li a:hover{
+    color: #4811af;
+}
+
+ul .menu{
+    display: flex;
+}
+
+nav *{
+    color: white;
+    fill: white;
+}
+
+nav.wh *{
+    color: black;
+    fill: black;
+}
+
+nav.wh .navbar-brand h2{
+    color: #FD7E14;
+}
+
+nav.wh{
+    background-color: white;
+    box-shadow: 1px -1px 6px 2px rgba(139, 139, 139, 0.445);
+}
+
+.navbar-brand{
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+.navbar-brand h2{
+    font: normal 1.5em lobster;
+}
+
+
+nav.wh .navbar-collapse li a, nav.wh .navbar-collapse li button{
+    color: black;
+    fill: black;
+}
+
+@media screen and (max-width: 992px){
+
+    .navbar-collapse{
+        background-color: white;
+    }
+
+    .navbar-collapse{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100%;
+        align-items: flex-start;
+    }
+
+    .navbar-collapse li{
+        padding: 3px 20px;
+    }
+
+    .menu button{
+        font-size: 1.2em;   
+    }
+
+    .navbar-collapse .active{
+        background-color: #FD7E14;
+        color: white;
+    }
+
+    .navbar-collapse .active a{
+        color: white;
+    }
+
+    nav.wh .navbar-collapse li.active a{
+        color: white;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+
+    nav .col-4{
+        width: 150px;
+        margin-left: 20px;
+    }
+
+    nav ul li{
+        margin: 0 2%;
+    }
+    
+    ul .menu{
+        display: none;
+    }
+
+    nav ul li a, nav .navBts a button{
+        color: white;
+    }
+
+    nav a button{
+        color: white;
+    }
+    
+    nav.wh ul li a,  nav.wh .navBts a button{
+        color: black;
+    }
+
+}
