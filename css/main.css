@@ -51,14 +51,14 @@ i.fa-truck{
 }
 
 .delicias h1{
-    font: normal 2em lobster;
+    font: normal 1.5em lobster;
     text-align: center;
-    padding: 40px 0;
+    padding: 30px 0;
     color: chocolate;
 }
 
 .wow{
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .cardBackOp{
@@ -67,6 +67,10 @@ i.fa-truck{
     width: 98%;
     height: 98%;
 }
+
+.card{
+ 	min-height: 450px;
+ }
 
 .card img{
     width: auto;
@@ -86,13 +90,13 @@ i.fa-truck{
 }
 
 .cardTitle{
-    font: normal 1.5em lobster;
+    font: normal 1.3em lobster;
     color: crimson;
 }
 
 .cardPrice{
     text-align: end;
-    font: normal 1.8em varela;
+    font: normal 1.2em varela;
 }
 
 .card-body{
@@ -100,9 +104,9 @@ i.fa-truck{
 }
 
 .card-body p{
-    font: normal 1.1em varela;
+    font: normal 1em varela;
     text-align: justify;
-    min-height: 40%;
+    min-height: 35%;
 }
 
 .cardTags{
@@ -112,6 +116,7 @@ i.fa-truck{
     position: absolute;
     right: 0;
     top: 0;
+    z-index: 5;
 }
 
 .tag{
@@ -134,7 +139,7 @@ i.fa-truck{
 
 .delivery{
     width: 100%;
-    margin-top: 100px;
+    margin-top: 40px;
     background-image: url(../img/delivery1.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -181,7 +186,7 @@ footer *{
 }
 
 footer h6{
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .imageOpacity{
@@ -238,7 +243,7 @@ footer ul{
     }
 
     footer{
-        height: 200px;
+        height: 250px;
     }
     
 }

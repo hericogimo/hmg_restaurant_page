@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chicken Grill</title>
-    <link rel="shortcuticon" href="img/favicon.png">
+    <title>ecommerce page</title>
+    <link rel="favicon" href="img/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/buttons.css">
@@ -44,6 +44,43 @@
 </head>
 <body>
 
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Faça a sua encomenda!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Seu nome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Telefone</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Seu telefone">
+                    </div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Pedido</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Outros</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>    
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="hmgBtnR hmg-back-r" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="hmgBtnR hmg-back-g">Submeter pedido</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container" style="flex-wrap: nowrap;">
 
@@ -78,7 +115,7 @@
                         <a class="nav-link" href="#contact">localização</a>
                     </li>
                     
-                    <div class="align-items-center justify-content-center hideDesktop">
+                    <div class="align-items-center menuIconsDiv justify-content-center hideDesktop">
                         <a href="https://github.com/hericoGimo" class="border-1-d-w hmg-hover-w whatsBt shadown">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
                         </a>
@@ -95,7 +132,7 @@
 
             <div class="navBts hideDesktopFlex justify-content-between">
 
-                <a href="tel: +258 85 613 1320" class="border-1-d-w hmg-hover-w whatsBt shadown">
+                <a href="tel: +258 85 613 1320" class="border-1-d-w hmg-hover-w whatsBt shadown hideDesktop">
                     <i class="fa fa-phone-alt"></i>
                 </a>
 
@@ -144,7 +181,7 @@
                   <h2>Chicken Grill</h2>
                   <h4>O seu portal de Fast Food</h4>
                   <a href="#">
-                    <button class="hideDesktopFlexn hmgBtnR hover-p hmg-back-o">
+                    <button class="hideDesktopFlexn hmgBtnR hover-p hmg-back-o" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         Fazer encomenda
                     </button>
                   </a>
@@ -204,7 +241,7 @@
                             <h2 class="cardTitle">Hamburger Completo</h2>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <h2 class="cardPrice w-100">200Mt</h2>
-                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o">Fazer pedido</button>
+                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fazer pedido</button>
                         </div>
                     </div>
                 </div>
@@ -226,7 +263,7 @@
                             <h2 class="cardTitle">Super Promo</h2>
                             <p class="card-text">Frango interio, Dose de Batata e Refresco</p>
                             <h2 class="cardPrice w-100">500Mt</h2>
-                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o">Fazer pedido</button>
+                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fazer pedido</button>
                         </div>
                     </div>
                 </div>
@@ -248,7 +285,7 @@
                             <h2 class="cardTitle">Pizsa Promo</h2>
                             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor temporibus explicabo repellat</p>
                             <h2 class="cardPrice w-100">500Mt</h2>
-                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o">Fazer pedido</button>
+                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fazer pedido</button>
                         </div>
                     </div>
                 </div>
@@ -290,7 +327,7 @@
                  <div class="subscribe col-sm-12">
                       <h1>Fazemos Delivery para a sua área</h1>
                      <p>Delivery Lorem ipsum dolor sit amet, consectetur adipiscing elit.luctus est eget congue.</p>
-                     <a href="tel: +258 85 613 1320" class="hideMobile">
+                     <a href="tel: +258 85 613 1320">
                         <button class="hideDesktopFlexn hmgBtnR hover-o border-1-s-w noback">
                             <i class="fa fa-phone-alt"></i> +258 85 613 1320
                         </button>
@@ -336,7 +373,7 @@
                             <h2 class="cardTitle">Pizza 1</h2>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <h2 class="cardPrice w-100">300Mt</h2>
-                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o">Reservar</button>
+                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Reservar</button>
                         </div>
                     </div>
                 </div>
@@ -350,7 +387,7 @@
                             <h2 class="cardTitle">Frango</h2>
                             <p class="card-text">Frango interio, Dose de Batata e Refresco</p>
                             <h2 class="cardPrice w-100">500Mt</h2>
-                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o">Reservar</button>
+                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Reservar</button>
                         </div>
                     </div>
                 </div>
@@ -365,7 +402,7 @@
                             <h2 class="cardTitle">Pizsa Promo</h2>
                             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor temporibus explicabo repellat</p>
                             <h2 class="cardPrice w-100">500Mt</h2>
-                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o">Reservar</button>
+                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Reservar</button>
                         </div>
                     </div>
                 </div>
@@ -380,7 +417,7 @@
                             <h2 class="cardTitle">Hamburger</h2>
                             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor temporibus explicabo repellat</p>
                             <h2 class="cardPrice w-100">150Mt</h2>
-                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o">Reservar</button>
+                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Reservar</button>
                         </div>
                     </div>
                 </div>
@@ -395,7 +432,7 @@
                             <h2 class="cardTitle">Hamburger</h2>
                             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor temporibus explicabo repellat</p>
                             <h2 class="cardPrice w-100">150Mt</h2>
-                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o">Reservar</button>
+                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Reservar</button>
                         </div>
                     </div>
                 </div>
@@ -410,7 +447,7 @@
                             <h2 class="cardTitle">Hamburger</h2>
                             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor temporibus explicabo repellat</p>
                             <h2 class="cardPrice w-100">150Mt</h2>
-                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o">Reservar</button>
+                            <button type="button" class="hmgBtn hmg-back-o hmgBtnR hover-o" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Reservar</button>
                         </div>
                     </div>
                 </div>

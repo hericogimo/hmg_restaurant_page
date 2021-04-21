@@ -22,6 +22,16 @@
     background-color: white;
 }
 
+.hmg-back-r{
+    background-color: crimson;
+    color: white;
+}
+
+.hmg-back-g{
+    background-color: rgb(48, 131, 9);
+    color: white;
+}
+
 .hmg-fill-p{
     fill: #59359A;
 }

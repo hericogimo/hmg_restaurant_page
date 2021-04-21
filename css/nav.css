@@ -46,6 +46,11 @@ nav.wh .navbar-collapse li a, nav.wh .navbar-collapse li button{
     fill: black;
 }
 
+div.menuIconsDiv {
+	display: flex;	
+	padding: 20px 0;
+}
+
 @media screen and (max-width: 992px){
 
     .navbar-collapse{
@@ -109,6 +114,10 @@ nav.wh .navbar-collapse li a, nav.wh .navbar-collapse li button{
     
     nav.wh ul li a,  nav.wh .navBts a button{
         color: black;
+    }
+
+    div.menuIconsDiv {
+        display: none;	
     }
 
 }
